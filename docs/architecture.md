@@ -90,7 +90,7 @@ Should Not:
 ### core
 Responsibility:
 - Manage application configuration
-- Store enviroment settings
+- Store environment settings
 - Configure shared components (loggin, security, etc)
 
 Should Not:

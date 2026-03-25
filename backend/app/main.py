@@ -10,7 +10,7 @@ app = FastAPI(
     openapi_url=f"{settings.API_V1_STR}/openapi.json",
 )
 
-app.include_router(api_v1, prefix="/api/v1")
+app.include_router(api_v1, prefix=settings.API_V1_STR)
 
 
 @app.get("/")

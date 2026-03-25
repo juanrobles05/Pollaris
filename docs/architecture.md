@@ -45,7 +45,7 @@ Should Not:
 Responsibility:
 - Define the structure of request and response data
 - Validate data types and required fields
-- Serialize and deserialize data between the API and aplication
+- Serialize and deserialize data between the API and application
 
 Should Not:
 - Access the database

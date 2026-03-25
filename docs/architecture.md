@@ -91,7 +91,7 @@ Should Not:
 Responsibility:
 - Manage application configuration
 - Store environment settings
-- Configure shared components (loggin, security, etc)
+- Configure shared components (logging, security, etc)
 
 Should Not:
 - Contain business logic

@@ -78,14 +78,22 @@ Future versions may include caching, distributed services, and blockchain-based 
 
 ## Project Structure
 
+docs/          # Project documentation
+
 ```
 pollaris/
-
-docs/          # Project documentation
-backend/       # Backend API
-frontend/      # Web application
-infra/         # Infrastructure configuration
+│
+├── docs/          # Project documentation
+├── backend/       # Backend API
+├── frontend/      # Web application
+└── infra/         # Infrastructure configuration
 ```
+
+---
+
+## Developer instructions
+
+To run the backend locally, see [`backend/README.md`](backend/README.md) for detailed steps on creating the virtual environment, installing dependencies, and running the server.
 
 ---
 

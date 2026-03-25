@@ -1,0 +1,26 @@
+{
+  "editor.tabSize": 4,
+  "files.autoSave": "afterDelay",
+
+  "python.testing.pytestEnabled": true,
+  "python.terminal.useEnvFile": true,
+  "python.envFile": "${workspaceFolder}/backend/.env",
+
+  "ruff.configuration": "${workspaceFolder}/backend/pyproject.toml",
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/node_modules": true
+  }
+}

@@ -60,4 +60,7 @@ indent-style = "space"
 
 [tool.setuptools]
 # Esto le dice a pip qué carpetas incluir como paquetes
-packages = ["app"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

@@ -1,0 +1,26 @@
+repos:
+  # --- HOOKS GLOBALES (Para todo el repo) ---
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  # --- BACKEND (Solo archivos en la carpeta /backend) ---
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.9
+    hooks:
+      - id: ruff
+        files: ^backend/  # <-- Solo ejecuta si el archivo está en backend/
+        args: [ --fix, --config, backend/pyproject.toml ]
+      - id: ruff-format
+        files: ^backend/
+
+  # --- FRONTEND (Solo archivos en la carpeta /frontend) ---
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        files: ^frontend/  # <-- Solo ejecuta si el archivo está en frontend/
+        types_or: [javascript, ts, tsx, css, scss]
